@@ -16,7 +16,7 @@ class Euro :public Currency
 	{
 		return m_main;
 	}
-	unsigned char GetCent()const
+	int GetCent()const
 	{
 		return m_k;
 	}

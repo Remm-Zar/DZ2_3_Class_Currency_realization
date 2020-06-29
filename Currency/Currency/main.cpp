@@ -17,8 +17,8 @@ int main()
 	base = &e2;
 	Print(base);
 	//вызовы методов с помощью указателей 
-	DerDollar = new Dollar(12,56);
-	DerEuro = new Euro(45,90);
+	DerDollar = new Dollar(12,86);
+	DerEuro = new Euro(45,99);
 	//Dollar works
 	cout << "\nDollars: "<<DerDollar->GetDollar();	
 	cout << " Cents: "<<DerDollar->GetCent();
