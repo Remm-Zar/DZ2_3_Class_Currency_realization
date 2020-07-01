@@ -139,7 +139,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Currency.cpp" />
     <ClCompile Include="Dollar.cpp" />
     <ClCompile Include="Euro.cpp" />
     <ClCompile Include="main.cpp" />
