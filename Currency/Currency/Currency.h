@@ -6,11 +6,10 @@ protected:
 	unsigned char m_k = 0;
 public:
 	Currency(){}
-    // МОЖНО ЖЕ СРАЗУ char ПРИНИМАТЬ, ЧТОБЫ ПРЕОБРАЗОВАНИЕ НЕ ДЕЛАТЬ
-	Currency(long R, int k)
+	Currency(long R, unsigned char k)//REDONE
 	{
 		m_main = R;
-		m_k = (unsigned char)k;
+		m_k = k;
 	}
 	virtual ~Currency() {}
 	virtual void Print() = 0;

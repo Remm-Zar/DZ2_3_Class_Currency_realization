@@ -12,16 +12,23 @@ int main()
 	Currency* base;
 	Dollar *DerDollar,d(12, 34), d1(23, 45),d2(d+d1);
 	Euro *DerEuro,e(34, 56), e1(456, 76),e2(e+e1);
+	cout << "\n\\\\Polimorthism (1)////\n";
 	base = &d2;
 	Print(base);
 	base = &e2;
 	Print(base);
-	//âûçîâû ìåòîäîâ ñ ïîìîùüþ óêàçàòåëåé 
+	cout << "\n\\\\Virtual functions calls. Polimorthism (2)////\nDollar Print(): ";
+	//âûçîâ âèðòóàëüíûõ ôóíóöèé ÷åðåç óêàçàòåëü íà áàçîâûé êëàññ
+	base = &d1;
+	base->Print();
+	cout << "\nEuro Print():  ";
+	base = &e1;
+	base->Print();
+	cout << "\n\\\\\ Usual methods calls/////";
+	//âûçîâû îáû÷íûõ ìåòîäîâ ñ ïîìîùüþ óêàçàòåëåé 
 	DerDollar = new Dollar(12,86);
 	DerEuro = new Euro(45,99);
 	//Dollar works
-    // ÂÑÅ ÂÈÐÒÓÀËÜÍÛÅ ÔÓÍÊÖÈÈ ÍÀÄÎ ÂÛÇÛÂÀÒÜ ×ÅÐÅÇ ÓÊÀÇÀÒÅËÜ ÈËÈ ÑÑÛËÊÓ ÍÀ
-    // ÁÀÇÎÂÛÉ ÊËÀÑÑ
 	cout << "\nDollars: "<<DerDollar->GetDollar();	
 	cout << " Cents: "<<DerDollar->GetCent();
 	cout << "\n*DerDollar+d1=";

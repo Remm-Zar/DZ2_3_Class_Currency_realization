@@ -48,9 +48,7 @@ public:
 		unsigned char K = (int)(total * 100.0) % 100;
 		return Dollar(R, K);
 	}
+	friend Dollar operator*(const  Dollar& m, double n);//REDONE
 };
-// ПЕРВЫЙ ОПЕРАТОР УДОБНО СДЕЛАТЬ ДРУГОМ ИЛИ ЧЛЕНОМ КЛАССА,
-// ЧТОБЫ ИМЕТЬ ДОСТУП К ЗАКРЫТОЙ ЧАСТИ
-Dollar operator*(const  Dollar& m, double n);
 Dollar operator*(double n, const Dollar& m);
 
