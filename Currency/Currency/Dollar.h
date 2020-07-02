@@ -49,6 +49,8 @@ public:
 		return Dollar(R, K);
 	}
 };
+// ПЕРВЫЙ ОПЕРАТОР УДОБНО СДЕЛАТЬ ДРУГОМ ИЛИ ЧЛЕНОМ КЛАССА,
+// ЧТОБЫ ИМЕТЬ ДОСТУП К ЗАКРЫТОЙ ЧАСТИ
 Dollar operator*(const  Dollar& m, double n);
 Dollar operator*(double n, const Dollar& m);
 

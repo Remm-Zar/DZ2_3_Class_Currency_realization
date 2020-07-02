@@ -6,6 +6,7 @@ protected:
 	unsigned char m_k = 0;
 public:
 	Currency(){}
+    // МОЖНО ЖЕ СРАЗУ char ПРИНИМАТЬ, ЧТОБЫ ПРЕОБРАЗОВАНИЕ НЕ ДЕЛАТЬ
 	Currency(long R, int k)
 	{
 		m_main = R;

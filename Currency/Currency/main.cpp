@@ -20,6 +20,8 @@ int main()
 	DerDollar = new Dollar(12,86);
 	DerEuro = new Euro(45,99);
 	//Dollar works
+    // бяе бхпрсюкэмше тсмйжхх мюдн бшгшбюрэ вепег сйюгюрекэ хкх яяшкйс мю
+    // аюгнбши йкюяя
 	cout << "\nDollars: "<<DerDollar->GetDollar();	
 	cout << " Cents: "<<DerDollar->GetCent();
 	cout << "\n*DerDollar+d1=";
